@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class LoginTest {
-
+    KeywordEngine keywordEngine;
     @Test
     public void loginTest() throws IOException {
-        KeywordEngine keywordEngine = new KeywordEngine();
+         keywordEngine = new KeywordEngine();
         keywordEngine.startEngine("login");
     }
 }
